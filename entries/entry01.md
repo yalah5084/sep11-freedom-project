@@ -1,7 +1,7 @@
 # Entry 1
 ##### 11/07/22
 
-I've decided on the tool [Leaflet](https://leafletjs.com/) because since my idea is to make a game that involves a map, Leaflet is the perfect tool for it. My idea is to make a game with a map where the user has to find an animal based on the hints provided. It would be an interactive map so they user will be able to navigate through it. Other tools I've considered was [Melon](https://melonjs.org/) and [Babylon](https://www.babylonjs.com/) because both of their graphics are nice.
+I've decided on the tool [Leaflet](https://leafletjs.com/) because since my idea is to make a game that involves a map, Leaflet is the perfect tool for it. My idea is to make a game with a map where the user has to find an animal based on the hints provided. It would be an interactive map so the user will be able to navigate through it. Other tools I've considered was [Melon](https://melonjs.org/) and [Babylon](https://www.babylonjs.com/) because they have great graphics.
 
 I’m currently in the define the problem stage in the engineering design process. Next stage will be researching the problem.
 
