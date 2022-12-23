@@ -1,7 +1,7 @@
 # Entry 2
 ##### 12/12/22
 
-To start tinkering with leaflet, Angelina recommended me this [starter blog](https://www.sitepoint.com/leaflet-create-map-beginner-guide/). After I followed the blog, the only thing that I was able to do at first was to change was the coordinates because I didn't know how to tinker with the rest of the code yet. So I was just changing the coordinates and I thought they were `([x, y])`, but the marker didn't go to where I wanted it to. For example, I changed the coordinates from `([-80, 150])` to `([80, 150])`, I was expecting the marker to go the right, but it ended up going up. I kept changing the values, but it still went the opposite direction. I googled how the coordinates work for Leaflet and found out that it was `([longitude, latitude])`.
+To start tinkering with leaflet, Angelina recommended me this [starter blog](https://www.sitepoint.com/leaflet-create-map-beginner-guide/). After I followed the blog, the only thing that I was able to do at first was to change the coordinates because I didn't know how to tinker with the rest of the code yet. So I was just changing the coordinates and I thought they were `([x, y])`, but the marker didn't go to where I wanted it to. For example, I changed the coordinates from `([-80, 150])` to `([80, 150])`, I was expecting the marker to go the right, but it ended up going up. I kept changing the values, but it still went the opposite direction. I googled how the coordinates work for Leaflet and found out that it was `([longitude, latitude])`.
 
 Marker `([-80, 150])`:
 
