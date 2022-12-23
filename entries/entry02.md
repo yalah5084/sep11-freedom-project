@@ -24,7 +24,7 @@ iconSize: [40, 40],
 var marker = L.marker([-80, 150], {icon: iconMarker}).addTo(map);
 ```
 
-![Beach Icon]()
+![Beach Icon](img/beachicon.png)
 
 
 I was wondering if it's possible to change the icon to anything you wanted, so I google a random smiling face and used its URL instead, and it worked:
@@ -38,12 +38,16 @@ iconSize: [40, 40],
 // Marker
 var marker = L.marker([-80, 150], {icon: iconMarker}).addTo(map);
 ```
+![smiling face marker](img/smilingface.png)
+
+
  Then I added a popup. I just need to add `.bindPopup("text")` to the marker:
 
 ```js
 // Marker
 var marker = L.marker([-80, 150], {icon: iconMarker}).bindPopup('Hello!!').addTo(map);
 ```
+![popup](img/popup.png)
 
 ### Goal for the winter break
 
