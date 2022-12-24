@@ -12,7 +12,7 @@ Marker `([80, 150])`:
 ![Marker `([80, 150])`](img/leaflet2.png)
 
 
-Then, I found this [youtube video](https://www.youtube.com/watch?v=wVnimcQsuwk). Thanks to the video, I found a [website](https://cloud.maptiler.com/maps/) for the different maps I can use. After finishing following the video, I wanted to change the icon of the marker and add popup because the previous blog showed how to do it. I went back to the blog and saw that we need an URL for the icon. I first used the URL in the blog, which is a beach icon.
+Then, I found this [youtube video](https://www.youtube.com/watch?v=wVnimcQsuwk). Thanks to the video, I found a [website](https://cloud.maptiler.com/maps/) for the different maps I can use. After following the video, I wanted to change the icon of the marker and add popup because the previous blog showed how to do it. I went back to the blog and saw that we need an URL for the icon. I first used the URL in the blog, which is a beach icon.
 
 ```js
 // Icon
@@ -51,9 +51,8 @@ var marker = L.marker([-80, 150], {icon: iconMarker}).bindPopup('Hello!!').addTo
 
 ### Goal for the winter break
 
-* Follow this [youtube video]()
-* Figure out
-
+* Follow this [youtube video](https://www.youtube.com/watch?v=OYjFR_CGV8o&list=PLGHe6Moaz52PUNP4DtIshALDogSURIlYB&index=2&ab_channel=MapTiler) to add circles and polygons to my map.
+* Folow this [youtube video](https://www.youtube.com/watch?v=wnsEYm9hF0o&list=PLGHe6Moaz52PUNP4DtIshALDogSURIlYB&index=3&ab_channel=MapTiler) to add shadow to my map.
 
 [Previous](entry01.md) | [Next](entry03.md)
 
