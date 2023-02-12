@@ -8,9 +8,11 @@ var circle = L.circle([51.508, -0.11], {
   color: 'red',
   fillColor: 'red',
 }
+```
 
-//OR
+OR
 
+``` js
 var circle = L.circle([51.508, -0.11], {
   color: 'red',
 }
