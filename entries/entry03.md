@@ -34,7 +34,7 @@ Then I moved on to a polygon. I added a popup to the polygon and I noticed that 
 ![polygon popup](https://user-images.githubusercontent.com/91745172/218325282-7ef1a5b1-dbf8-4042-ac37-80a1f4b40d05.png)
 ![smileyface popup](https://user-images.githubusercontent.com/91745172/218325304-4a979ed3-16f5-4140-8ed4-3428a1d93cf1.png)
 
-I didn't want the popups to close so I googled "can you open multiple popups at the same time leaflet Stack overflow." As I was scrolling on [stackoverflow](https://stackoverflow.com/questions/38957585/how-can-i-open-multiple-popups-in-leaflet-marker-at-a-time), I saw `{closeOnClick: false, autoClose: false}` and decided to use it. I added it to both the polygon and the smiley face marker.
+I didn't want the popups to close so I googled "Can you open multiple popups at the same time leaflet Stack overflow." As I was scrolling on [stackoverflow](https://stackoverflow.com/questions/38957585/how-can-i-open-multiple-popups-in-leaflet-marker-at-a-time), I saw `{closeOnClick: false, autoClose: false}` and decided to use it. I added it to both the polygon and the smiley face marker.
 
 ``` js
 // smiley popup
