@@ -48,7 +48,7 @@ polygon.bindPopup("I'm a polygon", {closeOnClick: false, autoClose: false})
 
 I followed this [youtube video](https://www.youtube.com/watch?v=wnsEYm9hF0o&list=PLGHe6Moaz52PUNP4DtIshALDogSURIlYB&index=4&ab_channel=MapTiler) to add a shadow to the smiley face, circle, and polygon. After watching the video, I was still confused about the value of `iconAnchor` and `shadowAnchor` because the guy didn't specify how to get those values. I googled "how to find the value of iconAnchor leaflet js," but I couldn't find anything helpful. So I'm planning to learn about the anchor values next. I'm also planning to learn how to add [GeoJSON](RIlYB&index=5&ab_channel=MapTiler), [scale and watermarks](https://www.youtube.com/watch?v=SfBkBBM4U8U&list=PLGHe6Moaz52PUNP4DtIshALDogSURIlYB&index=6&ab_channel=MapTiler) with the same youtube channel.
 
-I’m currently in the research the problem stage in the engineering design process.
+I’m currently in the research the problem stage in the engineering design process. The next stage will continue to be research the problem because there is still more to learn about Leaflet.
 
 The three skills that I’m developing are how to google, how to read, and attention to detail. I had to google how to make the popups not close when I open a different popup. I found the answer on Stack Overflow and had to read carefully through all the code and find what I needed. I had to pay attention to detail when a regular marker appeared instead of a circle because I had written something wrong in my code.
 
