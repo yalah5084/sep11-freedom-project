@@ -3,7 +3,7 @@
 
 ### MVP
 
-The teacher gave us the idea of using coordinates to find the lost pet for the MVP. However, we weren't sure how that would work with coordinates, then he showed us that the user can get the coordinates with [Google Maps](https://www.google.com/maps). The next step was to create the map. I had initally made a map in a separate file because our original plan was to have a separate home page and a separate map. Then, we changed our mind and wanted to do everythig in one page so I had to move the map that I already made to the main page. I encountered a small problem which was to make the map smaller. I searched on google how to make a Leaflet map smaller and I didn't find anything. Until I remembered that the first thing I did when I learned Leaflet was to set the map to the size of the screen with CSS. I originally had:
+The teacher gave us the idea of using coordinates to find the lost pet for the MVP. However, we weren't sure how that would work with coordinates, then he showed us that the user can get the coordinates with [Google Maps](https://www.google.com/maps). The next step was to create the map. I had initially made a map in a separate file because our original plan was to have a separate home page and a separate map. Then, we changed our minds and wanted to do everything on one page so I had to move the map that I already made to the main page. I encountered a small problem which was making the map smaller. I searched on Google how to make a Leaflet map smaller and I didn't find anything. Until I remembered that the first thing I did when I learned Leaflet was to set the map to the size of the screen with CSS. I originally had:
 
 ```cs
 #map {
