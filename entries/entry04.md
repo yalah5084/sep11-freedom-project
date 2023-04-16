@@ -39,7 +39,7 @@ function petMarker(long, lat) {
 }
 ```
 
-I wanted the popup to open once it was created, so I tried to add `.openPopup()` before `.addTo(map)`. But the popup didn't open at first. I didn't understand the problem because everything looked good. I went back to the file where I tinkered with my tool and noticed that the marker was stored in a variable and the order of `addTo(map)`, `.bindPopup()` and `.openPopup()` was different. I had to add the marker to the map first, then make a popup, and then open it. 
+I wanted the popup to open once it was created, so I tried to add `.openPopup()` before `.addTo(map)`. But the popup didn't open at first. I didn't understand what the problem was, so I went back to the file where I tinkered with my tool and noticed that the marker was stored in a variable and the order of `.addTo(map)`, `.bindPopup()` and `.openPopup()` was different. I had to add the marker to the map first, then make a popup, and then open it. 
 
 ```js
  function petMarker(long, lat) {
