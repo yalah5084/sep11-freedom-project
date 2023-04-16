@@ -15,7 +15,7 @@ The teacher gave us the idea of using coordinates to find the lost pet for the M
 }
 ```
 
-I started with chaging the position to `relative`, but the map disappeared. After tinkering with the values of the sides and adding h1s, I figured that the problem was that I didn't set a width and a height. I set the  width to `1300px` and the height to `600px`. I also realized that I didn't need `position: relative` and I only needed `margin: auto` to center the map horizonatally.
+I started by changing the position to relative, but the map disappeared. After tinkering with the values of the sides and adding h1s, I figured that the problem was that I didn't set a width and a height. I set the width to `1300px` and the height to `600px`. I also realized that I didn't need position: relative and I only needed margin: auto to center the map horizontally.
 
 ![image](https://user-images.githubusercontent.com/91745172/232341985-1cafe1dc-434d-4270-8d8f-83c06a6c41bf.png)
 
