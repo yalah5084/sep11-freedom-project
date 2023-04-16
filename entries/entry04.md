@@ -1,6 +1,32 @@
 # Entry 4
 ##### 04/16/23
 
+### Tinker with tool
+
+I wanted to know how to remove a marker so I googled "how to remove markers on Leaflet js." My first result was [Stack Overflow](https://stackoverflow.com/questions/9912145/leaflet-how-to-find-existing-markers-and-delete-markers#:~:text=removeLayer()%20and%20it%20gets,Hope%20that%20helps%20you%20out!&text=Save%20this%20answer.,-Show%20activity%20on), but as I scrolled, I didn't understand anything. I decided to go on Youtube and found a helpful [tutorial](https://www.youtube.com/watch?v=tJWE7Fe_i-k&ab_channel=AnartzMugikaLedo-Desarrollo%26Formaci%C3%B3n) in Spanish. After watching the video, I changed a few things and only used what I needed. Instead of `move`, I wanted to use double click, but I forgot how it was written so I looked up the [Leaflet reference]([https://leafletjs.com/reference.html#evented-once](https://leafletjs.com/reference.html#interactive-layer-dblclick)). I didn't need `draggable: true`, but it gave me a good idea for my freedom project to let the user drag the marker. `.removeLayer()` is what removes the marker. I ended up with this:
+
+```js
+var leafMarker = L.marker([51.5,-0.09], {icon: leafIcon).addTo(map) // make leaf marker
+leafMarker.on('dblclick', () => map.removeLayer(leafMarker)) // double click to delete marker
+```
+
+In the same leaflet reference, I found the [`on()` menthod](https://leafletjs.com/reference.html#evented-on) that the guy was using and since I didn't understand what `() =>` was, I was hoping that it would clarify my question. However, I saw the different syntaxes for the method and realized that I could use `function(){}` instead of `() =>`. I was curious to see if I could use `.addEventListener()` instead of `.on()` and in fact, I could use it.
+
+```js
+leafMarker.on('dblclick', function() {map.removeLayer(leafMarker)})
+// OR
+leafMarker.addEventListener('dblclick', function() {map.removeLayer(leafMarker)})
+```
+
+Before double clicking:
+
+![image](https://user-images.githubusercontent.com/91745172/232350517-c9189e1c-5ed8-4da4-8863-1d9024cacff8.png)
+
+After double clicking:
+
+![image](https://user-images.githubusercontent.com/91745172/232350540-b887aa4b-2e9f-4617-8e71-d1c074c2b259.png)
+
+
 ### MVP
 
 The teacher gave us the idea of using coordinates to find the lost pet for the MVP. However, we weren't sure how that would work with coordinates, then he showed us that the user can get the coordinates with [Google Maps](https://www.google.com/maps). The next step was to create the map. I had initially made a map in a separate file because our original plan was to have a separate home page and a separate map. Then, we changed our minds and wanted to do everything on one page so I had to move the map that I already made to the main page. I encountered a small problem which was making the map smaller. I searched on Google how to make a Leaflet map smaller and I didn't find anything. Until I remembered that the first thing I did when I learned Leaflet was to set the map to the size of the screen with CSS. I originally had:
@@ -31,7 +57,7 @@ function petMarker(long, lat) {
 }
 ```
 
-Another thing I wanted to do was to add popups with the pet's name so I added a `bindPopup()` function to the marker. I also added `{closeOnClick: false, autoClose: false}` because I didn't want the popup to close when the user clicks somewhere else on the page. 
+Another thing I wanted to do was to add popups with the pet's name so I added a `.bindPopup()` to the marker. I also added `{closeOnClick: false, autoClose: false}` because I didn't want the popup to close when the user clicks somewhere else on the page. 
 
 ```js
 function petMarker(long, lat) {
