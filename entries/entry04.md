@@ -48,7 +48,7 @@ I wanted the popup to open once it was created, so I tried to add `.openPopup()`
 }
 ```
 
-![image](https://user-images.githubusercontent.com/91745172/232341920-4b25a9fe-cfdb-425d-b74f-f4658949e79e.png)
+![image](https://user-images.githubusercontent.com/91745172/232342048-d72ac545-0afa-477a-9d8f-9dad49e48ccd.png)
 
 
 
