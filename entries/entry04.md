@@ -17,7 +17,7 @@ The teacher gave us the idea of using coordinates to find the lost pet for the M
 
 I started with chaging the position to `relative`, but the map disappeared. After tinkering with the values of the sides and adding h1s, I figured that the problem was that I didn't set a width and a height. I set the  width to `1300px` and the height to `600px`. I also realized that I didn't need `position: relative` and I only needed `margin: auto` to center the map horizonatally.
 
-![image](https://user-images.githubusercontent.com/91745172/232341612-04a150b1-23d5-4aaa-ad2b-10b17d0e419f.png)
+![image](https://user-images.githubusercontent.com/91745172/232341985-1cafe1dc-434d-4270-8d8f-83c06a6c41bf.png)
 
 My partner Hanna had already set it the HTML so that the user could provide the coordinates and the pet's name. So my next step was to use the provided coordinates and make a marker on the map. I gave an event listener to the button and put `L.marker([userLong, userLat]).addTo(map)` inside the button so that it creates a marker once the button was clicked. However, it didn't work. Then, I thought of using a function. I created a function call `petMarker` with two parameters and I call the function when the button is clicked with `petMaker(userLong, userLat)`:
 
