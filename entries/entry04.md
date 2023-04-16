@@ -19,7 +19,7 @@ I started by changing the position to relative, but the map disappeared. After t
 
 ![image](https://user-images.githubusercontent.com/91745172/232341985-1cafe1dc-434d-4270-8d8f-83c06a6c41bf.png)
 
-My partner Hanna had already wrote the HTML so that the user could provide the coordinates and the pet's name. So my next step was to use the provided coordinates and make a marker on the map. I gave an event listener to the button and put `L.marker([userLong, userLat]).addTo(map)` inside the button so that it creates a marker once the button was clicked. However, it didn't work. Then, I thought of using a function. I created a function call `petMarker` with two parameters and I call the function when the button is clicked:
+My partner Hanna had already written the HTML so that the user could provide the coordinates and the pet's name. So my next step was to use the provided coordinates and make a marker on the map. I gave an event listener to the button and put `L.marker([userLong, userLat]).addTo(map)` inside the button so that it creates a marker once the button was clicked. However, it didn't work. Then, I thought of using a function. I created a function called `petMarker` with two parameters and I call the function when the button is clicked:
 
 ```js
 button.addEventListener("click", function() {
@@ -31,7 +31,7 @@ function petMarker(long, lat) {
 }
 ```
 
-Another thing I wanted to do was to add popups with the pet's name so I added a `bindPopup()` function to the marker. I also added `{closeOnClick: false, autoClose: false}` because I didn't want the popup to close when the user clicks somewhere else in the page. 
+Another thing I wanted to do was to add popups with the pet's name so I added a `bindPopup()` function to the marker. I also added `{closeOnClick: false, autoClose: false}` because I didn't want the popup to close when the user clicks somewhere else on the page. 
 
 ```js
 function petMarker(long, lat) {
