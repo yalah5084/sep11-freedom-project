@@ -31,7 +31,7 @@ function petMarker(long, lat) {
 }
 ```
 
-Another thing I wanted to do was to add popups with the pet's name to the markers. I added a `bindPopup()` function to the marker. I added `{closeOnClick: false, autoClose: false}` too because I didn't want the popup to close when the user clicks other parts of the page. 
+Another thing I wanted to do was to add popups with the pet's name so I added a `bindPopup()` function to the marker. I also added `{closeOnClick: false, autoClose: false}` because I didn't want the popup to close when the user clicks somewhere else in the page. 
 
 ```js
 function petMarker(long, lat) {
