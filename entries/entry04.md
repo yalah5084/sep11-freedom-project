@@ -24,8 +24,7 @@ Before double clicking:
 
 After double clicking:
 
-![image](https://user-images.githubusercontent.com/91745172/232350635-5c731eca-a2f1-4091-ae43-546bcea5f4fa.png)
-
+![image](https://user-images.githubusercontent.com/91745172/232350703-fe882a12-e628-4583-9d8f-e0c0003248b0.png)
 
 ### MVP
 
