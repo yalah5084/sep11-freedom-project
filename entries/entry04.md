@@ -87,9 +87,9 @@ function petMarker(long, lat) {
 https://user-images.githubusercontent.com/91745172/232358918-81e59696-c8e4-4611-8171-0666ff48ee12.mp4
 
 
-I'm curretly in the create a prototype stage becasue I'm building my MVP for my freedom project in the engineering design process. The next stage will be to test and evaluate the prototype because I have to improve and/or add things to my project.
+I'm curretly in the create a prototype stage in the engineering design process becasue I'm building my MVP for my freedom project. The next stage will be to test and evaluate the prototype because I have to improve and/or add things to my project.
 
-Two skills that I'm developing are how to google and how to learn. I googled how to remove a marker and found some useful things such as being able to drag the marker.  I also had to learn how to remove a marker by watching a Youtube tutorial. With the tutotial, I still had some questions which I had to look for the leaflet reference.
+Three skills that I'm developing are how to google, how to learn, and how to read. I googled how to remove a marker and found some useful things such as being able to drag the marker.  I also had to learn how to remove a marker by watching a Youtube tutorial. With the tutotial, I still had some questions which I had to look for the answers in the Leaflet reference. I had to carefully read and understand what I was reading in the reference.
 
 
 [Previous](entry03.md) | [Next](entry05.md)
