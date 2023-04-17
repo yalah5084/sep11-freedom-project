@@ -86,7 +86,7 @@ function petMarker(long, lat) {
 }
 ```
 
-https://user-images.githubusercontent.com/91745172/232352761-1b6d7591-d5ae-4f1e-bf98-a792cd90bd52.mp4
+https://user-images.githubusercontent.com/91745172/232352831-2d0c3423-2fc5-4dd1-af81-16766bf84a97.mp4
 
 
 [Previous](entry03.md) | [Next](entry05.md)
