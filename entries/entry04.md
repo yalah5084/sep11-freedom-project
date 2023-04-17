@@ -3,14 +3,14 @@
 
 ### Tinker with tool
 
-I wanted to know how to remove a marker so I googled "how to remove markers on Leaflet js." My first result was [Stack Overflow](https://stackoverflow.com/questions/9912145/leaflet-how-to-find-existing-markers-and-delete-markers#:~:text=removeLayer()%20and%20it%20gets,Hope%20that%20helps%20you%20out!&text=Save%20this%20answer.,-Show%20activity%20on), but as I scrolled, I didn't understand anything. I decided to go on Youtube and found a helpful [tutorial](https://www.youtube.com/watch?v=tJWE7Fe_i-k&ab_channel=AnartzMugikaLedo-Desarrollo%26Formaci%C3%B3n) in Spanish. After watching the video, I changed a few things and only used what I needed. Instead of `move`, I wanted to use double click, but I forgot how it was written so I looked up the [Leaflet reference](https://leafletjs.com/reference.html#map-dblclick). I didn't need `draggable: true`, but it gave me a good idea for my freedom project to let the user drag the marker. `.removeLayer()` is what removes the marker. I ended up with this:
+I wanted to know how to remove a marker so I googled "how to remove markers on Leaflet js." My first result was [Stack Overflow](https://stackoverflow.com/questions/9912145/leaflet-how-to-find-existing-markers-and-delete-markers#:~:text=removeLayer()%20and%20it%20gets,Hope%20that%20helps%20you%20out!&text=Save%20this%20answer.,-Show%20activity%20on), but as I scrolled, I didn't understand anything. I decided to go on Youtube and found a helpful [tutorial](https://www.youtube.com/watch?v=tJWE7Fe_i-k&ab_channel=AnartzMugikaLedo-Desarrollo%26Formaci%C3%B3n) in Spanish. After watching the video, I changed a few things and only used what I needed. Instead of `move`, I wanted to use double click, but I forgot how it was written so I looked up the [Leaflet reference](https://leafletjs.com/reference.html#map-dblclick). I didn't need `draggable: true`, but it gave me a good idea for my freedom project to let the user drag the marker. `removeLayer()` is what removes the marker. I ended up with this:
 
 ```js
 var leafMarker = L.marker([51.5,-0.09], {icon: leafIcon).addTo(map) // make leaf marker
 leafMarker.on('dblclick', () => map.removeLayer(leafMarker)) // double click to delete marker
 ```
 
-In the same leaflet reference, I found the [`on()` method](https://leafletjs.com/reference.html#evented-on) that the guy was using and since I didn't understand what `() =>` was, I was hoping that it would clarify my question. However, I saw the different syntaxes for the method and realized that I could use `function(){}` instead of `() =>`. I was curious to see if I could use `.addEventListener()` instead of `.on()` so I tried it and I actually can.
+In the same leaflet reference, I found the [`on()` method](https://leafletjs.com/reference.html#evented-on) that the guy was using and since I didn't understand what `() =>` was, I was hoping that it would clarify my question. However, I saw the different syntaxes for the method and realized that I could use `function(){}` instead of `() =>`. I was curious to see if I could use `addEventListener()` instead of `on()` so I tried it and I actually can.
 
 ```js
 leafMarker.on('dblclick', function() {map.removeLayer(leafMarker)})
@@ -56,7 +56,7 @@ function petMarker(long, lat) {
 }
 ```
 
-Another thing I wanted to do was to add popups with the pet's name so I added a `.bindPopup()` to the marker. I also added `{closeOnClick: false, autoClose: false}` because I didn't want the popup to close when the user clicks somewhere else on the page. 
+Another thing I wanted to do was to add popups with the pet's name so I added a `bindPopup()` to the marker. I also added `{closeOnClick: false, autoClose: false}` because I didn't want the popup to close when the user clicks somewhere else on the page. 
 
 ```js
 function petMarker(long, lat) {
@@ -64,7 +64,7 @@ function petMarker(long, lat) {
 }
 ```
 
-I wanted the popup to open once it was created, so I tried to add `.openPopup()` before `.addTo(map)`. But the popup didn't open at first. I didn't understand what the problem was, so I went back to the file where I tinkered with my tool and noticed that the marker was stored in a variable and the order of `.addTo(map)`, `.bindPopup()` and `.openPopup()` was different. I had to add the marker to the map first, then make a popup, and then open it. 
+I wanted the popup to open once it was created, so I tried to add `openPopup()` before `addTo(map)`. But the popup didn't open at first. I didn't understand what the problem was, so I went back to the file where I tinkered with my tool and noticed that the marker was stored in a variable and the order of `addTo(map)`, `bindPopup()` and `openPopup()` was different. I had to add the marker to the map first, then make a popup, and then open it. 
 
 ```js
  function petMarker(long, lat) {
@@ -74,6 +74,27 @@ I wanted the popup to open once it was created, so I tried to add `.openPopup()`
 ```
 
 ![image](https://user-images.githubusercontent.com/91745172/232342048-d72ac545-0afa-477a-9d8f-9dad49e48ccd.png)
+
+Lastly, I wanted the user to be able to remove the markers and evn drag them. After the last time I tinkered with my tool, I found a way to remove and drag the marker. I remember seeing {draggable: true} on the [Stack Overflow](https://stackoverflow.com/questions/9912145/leaflet-how-to-find-existing-markers-and-delete-markers#:~:text=removeLayer()%20and%20it%20gets,Hope%20that%20helps%20you%20out!&text=Save%20this%20answer.,-Show%20activity%20on) that I found before. And to delete a marker, I needed the `on()` and `removeLayer` methods. 
+
+```js
+function petMarker(long, lat) {
+  var marker = L.marker([long, lat], {draggable: true}).addTo(map) // add marker to the map
+  marker.bindPopup(petName.value, {closeOnClick: false, autoClose: false}).openPopup() // add pet name to the marker and make sure it's open
+
+  marker.on('dblclick', function() {map.removeLayer(marker)}) // double click to remove marker
+}
+```
+
+Before double clicking:
+
+
+
+https://user-images.githubusercontent.com/91745172/232352319-48905a3d-ce95-4e7f-9395-8f6fbf3ad39d.mp4
+
+
+
+After double clicking:
 
 
 
