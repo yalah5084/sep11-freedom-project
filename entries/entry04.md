@@ -18,13 +18,10 @@ leafMarker.on('dblclick', function() {map.removeLayer(leafMarker)})
 leafMarker.addEventListener('dblclick', function() {map.removeLayer(leafMarker)})
 ```
 
-Before double clicking:
 
-![image](https://user-images.githubusercontent.com/91745172/232350517-c9189e1c-5ed8-4da4-8863-1d9024cacff8.png)
+https://user-images.githubusercontent.com/91745172/232358488-af4697e3-5426-4180-9aa4-d751beff0d0b.mp4
 
-After double clicking:
 
-![image](https://user-images.githubusercontent.com/91745172/232350703-fe882a12-e628-4583-9d8f-e0c0003248b0.png)
 
 ### MVP
 
