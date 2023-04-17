@@ -10,7 +10,7 @@ var leafMarker = L.marker([51.5,-0.09], {icon: leafIcon).addTo(map) // make leaf
 leafMarker.on('dblclick', () => map.removeLayer(leafMarker)) // double click to delete marker
 ```
 
-In the same leaflet reference, I found the [`on()` menthod](https://leafletjs.com/reference.html#evented-on) that the guy was using and since I didn't understand what `() =>` was, I was hoping that it would clarify my question. However, I saw the different syntaxes for the method and realized that I could use `function(){}` instead of `() =>`. I was curious to see if I could use `.addEventListener()` instead of `.on()` and in fact, I could use it.
+In the same leaflet reference, I found the [`on()` menthod](https://leafletjs.com/reference.html#evented-on) that the guy was using and since I didn't understand what `() =>` was, I was hoping that it would clarify my question. However, I saw the different syntaxes for the method and realized that I could use `function(){}` instead of `() =>`. I was curious to see if I could use `.addEventListener()` instead of `.on()` so I tried it and I actually can.
 
 ```js
 leafMarker.on('dblclick', function() {map.removeLayer(leafMarker)})
