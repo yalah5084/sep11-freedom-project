@@ -86,16 +86,7 @@ function petMarker(long, lat) {
 }
 ```
 
-Before double clicking:
-
-
-
-https://user-images.githubusercontent.com/91745172/232352319-48905a3d-ce95-4e7f-9395-8f6fbf3ad39d.mp4
-
-
-
-After double clicking:
-
+https://user-images.githubusercontent.com/91745172/232352761-1b6d7591-d5ae-4f1e-bf98-a792cd90bd52.mp4
 
 
 [Previous](entry03.md) | [Next](entry05.md)
