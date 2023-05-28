@@ -5,7 +5,7 @@ by Yala Huang
 The "Freedom Project" for SEP11 is all about creating anything you want using Javascript and the tool of your choice. The purpose of this blog is to show the process of how I created a web app with my group by tinkering with my tool, reading the official documentation, and watching Youtube tutorials.
 
 ## Content
-For the project, my group and I made a pet finder web app to help people find their lost pet by connecting with other people. This blog will walk through my process of independently studying my tool Leaflet in order to make a map in which the users can add markers on it with the information they provide such as the pet's name, description and coordinates.
+For the project, my group and I made a pet finder web app to help people find their lost pets by connecting with other people. This blog will walk through my process of independently studying my tool Leaflet in order to make a map in which the users can add markers on it with the information they provide such as the pet's name, description, and coordinates.
 
 ## Links
 
