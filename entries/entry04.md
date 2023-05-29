@@ -1,7 +1,7 @@
 # Entry 4
 ##### 04/16/23
 
-### Tinker with tool
+### Tinker With Tool
 
 I wanted to know how to remove a marker so I googled "how to remove markers on Leaflet js." My first result was [Stack Overflow](https://stackoverflow.com/questions/9912145/leaflet-how-to-find-existing-markers-and-delete-markers#:~:text=removeLayer()%20and%20it%20gets,Hope%20that%20helps%20you%20out!&text=Save%20this%20answer.,-Show%20activity%20on), but as I scrolled, I didn't understand anything. I decided to go on Youtube and found a helpful [tutorial](https://www.youtube.com/watch?v=tJWE7Fe_i-k&ab_channel=AnartzMugikaLedo-Desarrollo%26Formaci%C3%B3n) in Spanish. After watching the video, I changed a few things and only used what I needed. Instead of `move`, I wanted to use double click, but I forgot how it was written so I looked up the [Leaflet reference](https://leafletjs.com/reference.html#map-dblclick). I didn't need `draggable: true`, but it gave me a good idea for my freedom project to let the user drag the marker. `removeLayer()` is what removes the marker. I ended up with this:
 
