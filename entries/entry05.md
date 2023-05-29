@@ -1,7 +1,7 @@
 # Entry 5
 ##### 04/27/23
 
-### Tinker with tool
+### Tinker With Tool
 
 I followed this [Youtube tutorial](https://www.youtube.com/watch?v=SfBkBBM4U8U&list=PLGHe6Moaz52PUNP4DtIshALDogSURIlYB&index=7&ab_channel=MapTiler) to see how I can add a scale to the map. It was really simple, I only needed 5 lines of code. When I saw the scale, I didn't know what it was measuring so I googled how a scale works in Leaflet js, then the internet said "Scale shows the scale which applies to the center point of the map." I was thinking to use the scale for my freedom project, but I didn't understand what the scale was for and wasn't sure if it was going to be useful.
 
