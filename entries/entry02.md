@@ -54,7 +54,7 @@ I’m currently in the research the problem stage in the engineering design proc
 
 The two skills that I’m developing are how to google and how to read because I was following a blog for starters about Leaflet so I had to pay attention to the vocabulary being used. For the coordinates of a map, I had to google how the coordinates are formatted because I thought it was (x, y), but the marker didn't move where I wanted it to.
 
-### Goals for the winter break
+### Goals for the Winter Break
 
 * Follow this [youtube video](https://www.youtube.com/watch?v=OYjFR_CGV8o&list=PLGHe6Moaz52PUNP4DtIshALDogSURIlYB&index=2&ab_channel=MapTiler) to add circles and polygons to my map.
 * Folow this [youtube video](https://www.youtube.com/watch?v=wnsEYm9hF0o&list=PLGHe6Moaz52PUNP4DtIshALDogSURIlYB&index=3&ab_channel=MapTiler) to add shadow to my map.
