@@ -17,6 +17,6 @@ We're finally in the last stage of the engineering design process which is commu
 
 
 
-[Previous](entry05.md) | [Next](entry07.md)
+[Previous](entry05.md)
 
 [Home](../README.md)
