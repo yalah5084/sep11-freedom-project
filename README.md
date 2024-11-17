@@ -11,6 +11,8 @@ For the project, my teammates [David](https://github.com/davidkevinl7792), [Hann
 
 [Product](https://yalah5084.github.io/sep11-fp/index.html)
 
+[Code](https://github.com/yalah5084/sep11-fp/tree/main)
+
 [Presentation](https://docs.google.com/presentation/d/17GQi0hqIRKB1PnaDHBHalsn606Czf5aM8RL-QssqTRs/edit?usp=sharing)
 
 ## Implications
